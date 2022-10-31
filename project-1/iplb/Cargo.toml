@@ -1,5 +1,5 @@
 [package]
-name = "pibl"
+name = "iplb"
 version = "0.1.0"
 edition = "2021"
 authors = ["Juan Manuel Young Hoyos <juanmanuel12.13.jmyh81@gmail.com>"]

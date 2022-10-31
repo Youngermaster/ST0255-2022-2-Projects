@@ -24,7 +24,7 @@ fn main() {
 
     {
         let mut ap = ArgumentParser::new();
-        ap.set_description("Dynamic TCP load balancer");
+        ap.set_description("Inverse Proxy TCP Load Balancer");
 
         ap.refer(&mut servers)
             .add_argument("server", Collect, "Servers to load balance");
