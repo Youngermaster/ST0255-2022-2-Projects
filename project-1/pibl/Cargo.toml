@@ -2,10 +2,11 @@
 name = "pibl"
 version = "0.1.0"
 edition = "2021"
+authors = ["Juan Manuel Young Hoyos <juanmanuel12.13.jmyh81@gmail.com>"]
 
 [dependencies]
 log = "0.4.16"
 argparse = "0.2.1"
 mio = "0.4.3"
 redis = "0.5.1"
-env_logger = "0.3.1"
+env_logger = "0.9.1"
