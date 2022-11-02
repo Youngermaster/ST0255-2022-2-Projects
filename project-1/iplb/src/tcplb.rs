@@ -15,6 +15,8 @@ use std::ops::Drop;
 
 use crate::backend::{GetBackend, RoundRobinBackend};
 
+// https://www.ibm.com/docs/en/ims/15.1.0?topic=options-vsam-buffer-sizes
+// https://community.fortinet.com/t5/Fortinet-Forum/Response-body-size-8192-and-header-size-24-exceeded-message/td-p/220290
 const BUFFER_SIZE: usize = 8192;
 const MAX_BUFFERS_PER_CONNECTION: usize = 16;
 const MAX_CONNECTIONS: usize = 512;
@@ -27,7 +29,7 @@ pub struct Proxy {
     // token of the listening socket
     token: Token,
 
-    // backend containing server to proxify
+    // backend containing server to "proxify"
     backend: Arc<Mutex<RoundRobinBackend>>,
 
     // slab of Connections (front and back ends)

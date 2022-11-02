@@ -65,6 +65,7 @@ fn main() {
         exit(1);
     }
 
+    // A mutex allows only one thread to access some data at any given time.
     let backend = Arc::new(Mutex::new(
         backend::RoundRobinBackend::new(servers).unwrap(),
     ));
