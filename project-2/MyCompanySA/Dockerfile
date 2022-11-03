@@ -17,4 +17,4 @@ RUN python3 manage.py makemigrations
 
 # runs the production server
 ENTRYPOINT ["python", "manage.py"]
-CMD ["runserver", "0.0.0.0:8000"]
+CMD ["runserver", "0.0.0.0:8000", "--insecure"]
