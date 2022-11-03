@@ -6,7 +6,7 @@ Django App review.
 
 ```
 docker build -t mycompanysa:release .
-docker run -it -p 8000:8000 mycompanysa:release
+docker run -d -it -p 8000:8000 mycompanysa:release
 ```
 
 ## Manual Setup ⚙️
