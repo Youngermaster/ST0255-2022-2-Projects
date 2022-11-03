@@ -12,6 +12,9 @@ WORKDIR /
 
 EXPOSE 8000
 
+RUN python3 manage.py migrate
+RUN python3 manage.py makemigrations
+
 # runs the production server
 ENTRYPOINT ["python", "manage.py"]
 CMD ["runserver", "0.0.0.0:8000"]
