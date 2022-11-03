@@ -13,12 +13,12 @@
 <div class="home-container">
 
     <div>
-        {% include 'base/topics_component.html' %}
+        {% include 'base/products_component.html' %}
     </div>
 
     <div>
-        <h5>{{room_count}} rooms available</h5>
-        <a href="{% url 'create-room' %}">Create Room</a>
+        <h5>{{room_count}} Reviews Open</h5>
+        <a href="{% url 'create-room' %}">Create Review</a>
 
         {% include 'base/feed_component.html' %}
 
