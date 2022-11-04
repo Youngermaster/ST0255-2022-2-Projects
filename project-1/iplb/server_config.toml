@@ -1,0 +1,5 @@
+bind = "0.0.0.0:8000"
+servers = ["172.22.16.1:3000", "172.22.16.1:3001", "172.22.16.1:3002"]
+redis_url = "redis://127.0.0.1:6379"
+disable_redis = false
+log_level = "info"
