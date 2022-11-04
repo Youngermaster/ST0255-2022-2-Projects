@@ -5,7 +5,7 @@ This project is meant to store my tutorials on **how to Solve Problems** and **C
 ## Docker build 🐋
 ```
 docker build -t nssecondary-mycompanysa:release .
-docker run -d -it -p 3000:3000 nssecondary-mycompanysa:release
+docker run -d -it -p 3000:80 nssecondary-mycompanysa:release
 ```
 
 ## Acknowledgement
