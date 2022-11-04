@@ -1,4 +1,5 @@
 \documentclass[a4paper, table]{article}
+\usepackage[spanish]{babel}
 \input{General/Preamble} % Loads in the preamble 
 \input{General/Settings} % Loads in user defined settings
 \begin{document}
@@ -8,12 +9,15 @@
 \newpage
 
 % Generates a ToC without page number
-{\hypersetup{linkcolor=black} % Keeps the ToC black even with non-black linkcolor
-\tableofcontents\thispagestyle{empty}}
+{
+    \hypersetup{linkcolor=black} % Keeps the ToC black even with non-black linkcolor
+    \tableofcontents
+    \thispagestyle{empty}
+}
 \newpage
 
-% contains inspiration for formatting tables, images, text citations etc.
-\input{Chapters/A. Procedure.tex} % Feel free to remove / comment out
+\input{Chapters/1. Objective.tex}
+\input{Chapters/2. Problematic.tex} 
 \newpage
 
 % % Creates references using the Biblatex 

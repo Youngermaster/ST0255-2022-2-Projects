@@ -1,32 +1,10 @@
-# Landing-Page
-A simple Django Landing Page for organizations.
+# nsprimary
+
+A simple Django Landing Page for *My Comany S.A.* built with Python and Django.
+
+## Screenshots [TODO]
 
 
-## Table of contents
-* [General info](#general-info)
-* [Screenshots](#screenshots)
-* [Features](#features)
-* [Technologies](#technologies)
-* [Setup](#setup)
-* [Status](#status)
-* [Inspiration](#inspiration)
-* [Contact](#contact)
-* [License](#license)
-* [Contributing](#contributing)
-
-
-## General info
-A simple Django Landing Page for organizations built with Python and Django.
-
-## Screenshots
-
-![Screenshot_2020-06-14 Coming Soon ](https://user-images.githubusercontent.com/19711677/84585879-cbfbb280-add9-11ea-8263-f2da37cbb638.png)
-
-
-
-## Features
-
-* Email subscription
 
 ## Technologies
 * Python 3.6
@@ -42,11 +20,7 @@ A simple Django Landing Page for organizations built with Python and Django.
 To run this app, you will need to follow these 3 steps:
 
 #### 1. Requirements
-  - a Laptop
-
-  - Text Editor or IDE (eg. vscode, PyCharm)
-
-  - [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) installed on your Laptop.
+  - [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
 
 
 #### 2. Install Python and Pipenv
@@ -71,7 +45,7 @@ To run this app, you will need to follow these 3 steps:
   $ pipenv shell
 
   # Start server
-  (Landing-Page-XXXX) $ python manage.py runserver
+  $ python manage.py runserver
   
   # Copy the IP address provided once your server has completed building the site. (It will say something like >> Serving at 127.0.0.1....).
   
@@ -79,27 +53,3 @@ To run this app, you will need to follow these 3 steps:
   >>> http://127.0.0.1:XXXX
   
   ```
-
-
-## Status
-Project is: _done_
-
-## Inspiration
-This project was based on the goal of starting a small Django project on my own.
-
-
-## Contact
-Created by [Williano](https://williano.github.io/) - feel free to contact me!
-
-## License
->You can check out the full license [here](https://github.com/Williano/Landing-Page/blob/master/LICENSE)
-
-This project is licensed under the terms of the **MIT** license.
-
-## Contributing
-
-1. Fork it (<https://github.com/Williano/Landing-Page.git>)
-2. Create your feature branch (`git checkout -b feature/fooBar`)
-3. Commit your changes (`git commit -am 'Add some fooBar'`)
-4. Push to the branch (`git push origin feature/fooBar`)
-5. Create a new Pull Request
