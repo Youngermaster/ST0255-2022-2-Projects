@@ -1,19 +1,26 @@
 FROM node:alpine AS builder
 
 # Declaring env
-#ENV NODE_ENV production
+ENV NODE_ENV production
 
 # Setting up the work directory
-WORKDIR /
+WORKDIR /app
+
+# Installing dependencies
+COPY ./package.json ./
+RUN npm install
 
 # Copying all the files in our project
 COPY . .
 
-# Installing dependencies
-RUN npm i
+# Building our application
+RUN npm run build
 
-EXPOSE 3000
+# Fetching the latest nginx image
+FROM nginx
 
-# runs the production server
-ENTRYPOINT ["npm"]
-CMD ["run", "dev"]
+# Copying built assets from builder
+COPY --from=builder /app/build /usr/share/nginx/html
+
+# Copying our nginx.conf
+COPY nginx.conf /etc/nginx/conf.d/default.conf

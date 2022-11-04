@@ -1,0 +1,8 @@
+{
+  "label": "Vulnhub",
+  "position": 3,
+  "link": {
+    "type": "generated-index",
+    "description": "This subsection is made up to solve Vulnhub machines."
+  }
+}

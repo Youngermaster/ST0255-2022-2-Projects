@@ -1,0 +1,8 @@
+{
+  "label": "Hack The Box",
+  "position": 2,
+  "link": {
+    "type": "generated-index",
+    "description": "This subsection is made up to solve Hack The Box CTFs."
+  }
+}

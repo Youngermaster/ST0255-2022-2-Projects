@@ -1,0 +1,8 @@
+{
+  "label": "CTFs (Capture The Flag)",
+  "position": 2,
+  "link": {
+    "type": "generated-index",
+    "description": "This subsection is made up to solve CTFs and Hacking Challenges."
+  }
+}
