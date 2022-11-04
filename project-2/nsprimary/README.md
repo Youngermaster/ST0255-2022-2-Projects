@@ -2,6 +2,12 @@
 
 A simple Django Landing Page for *My Comany S.A.* built with Python and Django.
 
+## Docker
+```shell
+docker build -t nsprimary-mycompanysa:release .
+docker run -d -it -p 8000:8000 nsprimary-mycompanysa:release
+```
+
 ## Screenshots [TODO]
 
 
