@@ -1,0 +1,32 @@
+\documentclass[a4paper, table]{article}
+\usepackage[spanish]{babel}
+\usepackage{listings}
+\input{General/Preamble} % Loads in the preamble 
+\input{General/Settings} % Loads in user defined settings
+\begin{document}
+
+% Inserts the front page
+\input{Chapters/0. Frontpage}
+\newpage
+
+% Generates a ToC without page number
+{
+    \hypersetup{linkcolor=black} % Keeps the ToC black even with non-black linkcolor
+    \tableofcontents
+    \thispagestyle{empty}
+}
+\newpage
+
+\input{Chapters/1. Objective.tex}
+\input{Chapters/2. Problematic.tex} 
+\input{Chapters/3. Solution.tex}
+\newpage
+
+% % Creates references using the Biblatex 
+% \bibliographystyle{plain}
+% \bibliography{General/References.bib}
+% \newpage
+
+% \appendix % Any section after this command will have a letter as an index
+
+\end{document}
