@@ -622,7 +622,6 @@ impl Connection {
     /// This will cause the connection to register interests in write
     /// events with the event loop.
     fn send_messages(&mut self, messages: Vec<ByteBuf>) -> io::Result<()> {
-        // Todo: use Vec.append() but not in Rust stable
         self.send_queue.extend(messages.into_iter());
         self.interest.insert(EventSet::writable());
         Ok(())

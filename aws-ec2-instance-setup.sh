@@ -1,7 +1,7 @@
 #!/bin/bash
 # * Developer Dependencies
 curl -sL https://rpm.nodesource.com/setup_16.x | sudo bash -
-sudo yum install git docker nodejs gcc make -y
+sudo yum install git nodejs gcc-c++ make python3 docker -y
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 # * Services
 sudo systemctl enable docker
